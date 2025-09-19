@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.container {
+  width: 100vw;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.post {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.texto {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.capa {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #27ae60;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.botao:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .post {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
